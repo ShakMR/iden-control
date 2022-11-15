@@ -19,6 +19,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding: 1rem;
+    text-align: center;
 }
 
 .hero-gradient {
@@ -37,6 +39,8 @@ main {
     display: flex;
     align-items: start;
     justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 main a {
@@ -58,6 +62,23 @@ main a button {
 }
 
 
-main a button:hover, main a:hover button {
+main a button:hover, main a:hover button, button:active {
     background-position: 100% 50%;
+}
+
+
+@media only screen and (max-width: 400px) {
+    main a {
+        width: 100%;
+    }
+
+    main {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+    }
+
+    .header {
+        height: 100%;
+    }
 }
