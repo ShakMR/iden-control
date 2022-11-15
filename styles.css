@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.header {
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+    height: 50%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-gradient {
+    background: linear-gradient(to bottom, aquamarine 85%, transparent);
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+main {
+    height: 50%;
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+main a {
+    width: 25%;
+}
+
+main a button {
+    background: linear-gradient(-45deg, #00FFFFFF, aquamarine, lavenderblush, aquamarine, #00FFFFFF), 0 50%;
+    background-size: 400% 400%;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-position 0.5s ease-in-out;
+}
+
+
+main a button:hover, main a:hover button {
+    background-position: 100% 50%;
+}
